@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES BLUEMOON */
+
+:root {
+  --bg-primary: #0B1026;
+  --bg-secondary: #132043;
+
+  --moon-blue: #4B70F5;
+  --moon-light: #8FB8FF;
+
+  --text-primary: #DDE6ED;
+  --text-secondary: #AFCBFF;
+
+  --shadow-blue: rgba(75, 112, 245, 0.6);
+}
+
+/* BASE */
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* TITULOS */
+
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: var(--moon-light);
+
+  text-shadow:
+    0 0 10px rgba(143, 184, 255, 0.5),
+    0 0 20px rgba(143, 184, 255, 0.25);
+
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--moon-light);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--moon-light);
+}
+
+/* TEXTOS */
+
+p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* INPUTS */
+
+input {
+  width: 250px;
+  padding: 12px;
+
+  border: 1px solid rgba(156, 195, 255, 0.3);
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.04);
+
+  color: var(--text-primary);
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--moon-blue);
+
+  box-shadow:
+    0 0 10px rgba(75, 112, 245, 0.4),
+    0 0 20px rgba(75, 112, 245, 0.2);
+}
+
+input::placeholder {
+  color: rgba(221, 230, 237, 0.55);
+}
+
+/* BOTONES */
+
+button {
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: var(--moon-blue);
+
+  color: white;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 10px rgba(75, 112, 245, 0.5),
+    0 0 20px rgba(75, 112, 245, 0.25);
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--moon-blue);
+  border-radius: 10px;
+}
